@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+:empleado: as empleado
+:administrador: as admin
+rectangle Empresa_pedidos {
+empleado --(introducir pedidos)
+empleado --(cancelar pedido)
+empleado --(obtener estado del pedido)
+empleado --(borrar pedido)
+empleado --(buscar pedidos)
+empleado --(alta cliente)
+empleado --(buscar cliente)
+admin --(nuevo producto)
+admin --(borrar producto)
+}
+@enduml
