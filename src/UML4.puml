@@ -1,0 +1,7 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+:agente: as agente
+agente -->(enviar solicitud credito)
+(enviar solicitud credito) <|--(enviar solicitud de credito personal)
+(enviar solicitud credito) <|--(enviar solicitud de credito \n empresarial)
+@enduml
