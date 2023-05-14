@@ -1,0 +1,11 @@
+@startuml
+:socio: as socio
+:bibliotecario: as biblio
+rectangle Biblioteca{
+socio --(devolver libro)
+socio --(reservar libro)
+socio --(prestar libro)
+biblio --(prestar libro)
+biblio --(actualizar catalogo)
+}
+@enduml
