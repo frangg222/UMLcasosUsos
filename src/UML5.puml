@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+:cliente bancario: as banco
+:cliente corporativo: as corpo
+:cliente normal: as normal
+banco <|--corpo
+banco <|--normal
+note right of banco : Actor antecesor
+note right of normal : Actor descendiente
+@enduml
