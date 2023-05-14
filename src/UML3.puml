@@ -1,0 +1,7 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+:agente: as agente
+agente -->(evaluar \n solicitud de cerdito)
+(evaluar \n solicitud de cerdito) <..(solicitar informacio adicional\n al cliente) : <<extend>> \n si ingresos < 1000
+
+@enduml
