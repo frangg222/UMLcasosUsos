@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+:Empleado: as emp
+emp --(alta cliente)
+emp --(introducir pedido)
+emp --(obtener \n estado \n pedido)
+emp --(buscar pedido)
+emp --(cancelar pedido)
+(alta cliente) ..>(introducir pedido) : <<extends>>
+(obtener \n estado \n pedido)..>(buscar pedido): <<includes>>
+(cancelar pedido)..>(buscar pedido): <<includes>>
+(introducir pedido)..>(buscar cliente) : <<includes>>
+(introducir pedido)..>(pago en cuenta) : <<extends>>
+(introducir pedido)..>(pago con tarjeta) : <<extends>>
+
+@enduml
