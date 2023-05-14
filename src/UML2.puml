@@ -1,0 +1,7 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+:Bibliotecario: as biblio
+biblio -->(bajar socio)
+(bajar socio) ..>(buscar socio) : <<include>>
+
+@enduml
